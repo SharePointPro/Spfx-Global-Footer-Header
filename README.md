@@ -12,6 +12,17 @@ Steps to install:
 
 3# add JSON with links to TenantWideExtension list(/Lists/TenantWideExtensions/AllItems.aspx)  - Example JSON below
 
+List item for TenantWideExtension should look like:  
+Title: GlobalFooter  
+Component Id: 89092bd4-9033-4ea1-8d10-776b7116f8e0  
+Component Properties: (see JSON below)  
+Web Template: <blank>  
+List Template: 0  
+Location: ClientSideExtension.ApplicationCustomizer	  
+Sequence: <blank>  
+Host Properties: <blank>   
+  
+  
 Footer and header should now be visible on every modern experience page.
 
 ```
