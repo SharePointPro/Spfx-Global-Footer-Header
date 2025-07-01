@@ -25,10 +25,12 @@ export default class GlobalHeaderFooterApplicationCustomizer
 
   @override
   public onInit(): Promise<void> {
-    if (!this.properties.header && !this.properties.footer) {
-      console.error(`No links have been configured. Please configure links in the footer's properties and refresh the page`);
-      return Promise.resolve();
-    }
+    // if (!this.properties.header && !this.properties.footer) {
+    //   console.log("this.properties", this.properties);
+    
+    //   console.error(`No links have been configured. Please configure links in the footer's properties and refresh the page`);
+    //   return Promise.resolve();
+    // }
 
     // Handling the top placeholder
     if (!this.topPlaceHolder) {
@@ -45,10 +47,6 @@ export default class GlobalHeaderFooterApplicationCustomizer
 
       const element: React.ReactElement<GlobalHeaderProps> = React.createElement(
         GlobalHeader,
-        {
-          label: this.properties.header.label,
-          links: this.properties.header.links
-        }
       );
       ReactDom.render(element, this.topPlaceHolder.domElement);
     }
@@ -71,7 +69,7 @@ export default class GlobalHeaderFooterApplicationCustomizer
         links: this.properties.footer.links
       }
     );
-
+  
     ReactDom.render(element, this.footerPlaceholder.domElement);
 
     return Promise.resolve();

@@ -4,24 +4,21 @@
   "https": true,
   "serveConfigurations": {
     "default": {
-      "pageUrl": "https://secret.sharepoint.com/SitePages/Home.aspx",
+      "pageUrl": "https://iacadmin.sharepoint.com/SitePages/Home.aspx",
       "customActions": {
         "89092bd4-9033-4ea1-8d10-776b7116f8e0": {
           "location": "ClientSideExtension.ApplicationCustomizer",
-          "properties": {
-            "testMessage": "Test message"
-          }
+          "properties": {}
         }
       }
     },
     "globalFooter": {
-      "pageUrl": "https://secret.sharepoint.com/SitePages/Home.aspx",
+      "pageUrl": "https://iacadmin.sharepoint.com/SitePages/Home.aspx",
       "customActions": {
         "89092bd4-9033-4ea1-8d10-776b7116f8e0": {
           "location": "ClientSideExtension.ApplicationCustomizer",
           "properties": {
-            "links": [
-              {
+            "links": [{
                 "icon": "Home",
                 "title": "Home",
                 "url": "/"

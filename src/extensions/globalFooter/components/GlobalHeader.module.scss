@@ -3,7 +3,9 @@
 .globalHeader {
   background-color: $ms-color-neutralLighter;
   color: $ms-color-neutralPrimary;
-
+  padding: 10px;
+  position: relative;
+  height: 30px;
 
   .commandBar {
     width: 100%;
@@ -17,4 +19,44 @@
       background-color: inherit;
     }
   }
+
+  
+  .searchInputWrapper {
+    text-align: right;
+  }
+
+  .searchInput {
+    border: 1px solid #ced4da;
+    padding: 5px 10px;
+    width: 250px;
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+  }
+
+  .inputWrapper{
+    position: absolute;
+    right: 10px;
+  }
+
+  .logoImg {
+    height: 30px;
+    display: inline-block;
+  }
+  .infiniteWrapper{
+    display: inline-block;
+  }
+
+  .googleWrapper {
+    display:inline-block;
+    margin-left:20px;
+  }
+
+  @media only screen and (max-width: 760px) {
+    .googleWrapper {
+      display: none !important;
+    }
+  }
+
 }
